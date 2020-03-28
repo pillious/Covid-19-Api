@@ -5,9 +5,15 @@ Get up to date COVID-19 data in json format. <br><br>
 
 ### Get all data
 https://covid190api.herokuapp.com/api/data
+<br><br>
+
+### Get a list of all searchable Country & Territory names.
+https://covid190api.herokuapp.com/api/data/names
+<br><br>
 
 ### Filter parameters
 <div>https://covid190api.herokuapp.com/api/data?{parameters}</div>
+<br>
 
 Parameter | Type | Description
 ------------ | ------------- | -------------
