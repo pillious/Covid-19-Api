@@ -7,8 +7,10 @@ Get up to date COVID-19 data in json format. <br><br>
 https://covid190api.herokuapp.com/api/data
 <br><br>
 
-### Get a list of all searchable Country & Territory names.
-https://covid190api.herokuapp.com/api/data/names
+### Utility endpoints.
+Valid country and territory names: https://covid190api.herokuapp.com/api/data/names <br>
+Valid region names: https://covid190api.herokuapp.com/api/data/regions <br>
+Description of transmission types: https://covid190api.herokuapp.com/api/data/transmissionTypes
 <br><br>
 
 ### Filter parameters
