@@ -6,17 +6,17 @@ Get up to date COVID-19 data in json format.
 ## Usage:
 
 ### Get all data
-https://covid190api.herokuapp.com/api/data
+https://covid19.pillious.now.sh/api/data
 <br><br>
 
 ### Utility endpoints
-Valid country and territory names: https://covid190api.herokuapp.com/api/data/names <br>
-Valid region names: https://covid190api.herokuapp.com/api/data/regions <br>
-Description of transmission types: https://covid190api.herokuapp.com/api/data/transmissionTypes
+Valid country and territory names: https://covid19.pillious.now.sh/api/data/names <br>
+Valid region names: https://covid19.pillious.now.sh/api/data/regions <br>
+Description of transmission types: https://covid19.pillious.now.sh/api/data/transmissionTypes
 <br><br>
 
 ### Filter parameters
-<div>https://covid190api.herokuapp.com/api/data?{parameters}</div>
+<div>https://covid19.pillious.now.sh/api/data?{parameters}</div>
 <br>
 
 Parameter | Type | Description
@@ -32,10 +32,10 @@ deaths | Integer | Limit search to *n* number of total confirmed deaths and abov
 newDeaths | Integer |  Limit search to *n* number of new confirmed deaths (since the previous report) and above.
 transmissionType | Integer | Search by a specific type of transmission (as defined by WHO). * <ul><li>0 = Community transmission</li><li>1 = Local transmission</li><li>2 = Imported cases only</li><li>3 = Under investigation</li><li>4 = Interrupted transmission</li><li>5 = Sporadic cases</li><li>6 = Cluster of cases</li></ul>
 
-&#42; Descriptions for each transmission type found [HERE](https://covid190api.herokuapp.com/api/data/transmissionTypes).
+&#42; Descriptions for each transmission type found [HERE](https://covid19.pillious.now.sh/api/data/transmissionTypes).
 
 #### Response example
-http://covid190api.herokuapp.com/api/data?region=European%20Region&cases=35000&reportDate=2020-03-25
+https://covid19.pillious.now.sh/api/data?region=European%20Region&cases=35000&reportDate=2020-03-25
 ```javascript
 [
   {
