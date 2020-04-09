@@ -10,9 +10,9 @@ https://covid19.pillious.now.sh/api/data
 <br><br>
 
 ### Utility endpoints
-Valid country and territory names: https://covid19.pillious.now.sh/api/data/names <br>
-Valid region names: https://covid19.pillious.now.sh/api/data/regions <br>
-Description of transmission types: https://covid19.pillious.now.sh/api/data/transmissionTypes
+Valid country and territory names: [/api/data/names](https://covid19.pillious.now.sh/api/data/names) <br>
+Valid region names: [/api/data/regions](https://covid19.pillious.now.sh/api/data/regions) <br>
+Description of transmission types: [/api/data/transmissionTypes](https://covid19.pillious.now.sh/api/data/transmissionTypes)
 <br><br>
 
 ### Filter parameters
