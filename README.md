@@ -4,8 +4,6 @@ Get up to date COVID-19 data in json format.
 [Find me on RapidAPI](https://rapidapi.com/pillious/api/who-covid-19-data?endpoint=apiendpoint_6ee0a65a-43a1-44c3-a821-a0137508f32e)
 <br>
 
-<h3>Note: the api url has changed from the orignal heroku url.</h3>
-
 ## Usage:
 
 ### Get all data
