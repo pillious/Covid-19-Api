@@ -6,7 +6,7 @@ Get up to date COVID-19 data in json format.
 
 ## Usage:
 
-### Get the most recent report's data:
+### Get the most recent report's data
 https://covid19.pillious.now.sh/api/data
 <br><br>
 
@@ -15,6 +15,7 @@ Valid country and territory names: [/api/data/names](https://covid19.pillious.no
 Valid region names: [/api/data/regions](https://covid19.pillious.now.sh/api/data/regions) <br>
 Description of transmission types: [/api/data/transmissionTypes](https://covid19.pillious.now.sh/api/data/transmissionTypes)
 <br><br>
+        
 
 ### Filter parameters
 <div>https://covid19.pillious.now.sh/api/data?{parameters}</div>
@@ -31,11 +32,16 @@ cases | Integer | Limit search to *n* number of total confirmed cases and above.
 newCases | Integer | Limit search to *n* number of new confirmed cases (since the previous report) and above.
 deaths | Integer | Limit search to *n* number of total confirmed deaths and above.
 newDeaths | Integer |  Limit search to *n* number of new confirmed deaths (since the previous report) and above.
-transmissionType | Integer | Search by a specific type of transmission (as defined by WHO). * <ul><li>0 = Community transmission</li><li>1 = Local transmission</li><li>2 = Imported cases only</li><li>3 = Under investigation</li><li>4 = Interrupted transmission</li><li>5 = Sporadic cases</li><li>6 = Cluster of cases</li></ul>
+transmissionType | Integer | Search by a specific type of transmission (as defined by WHO). * <ul><li>0 = Community transmission</li><li>1 = Local transmission</li><li>2 = Imported cases only</li><li>3 = Under investigation</li><li>4 = Interrupted transmission</li><li>5 = Sporadic cases</li><li>6 = Cluster of cases</li><li>7 = No cases</li></ul>
 
 &#42; Descriptions for each transmission type found [HERE](https://covid19.pillious.now.sh/api/data/transmissionTypes).
 
-#### Response example
+### Api Updates
+6/19/20: 
+- New transmissionType added (No cases) <br>
+- If no query params are provided, /api/data returns data for the most recent report (originally returned data for every report)
+
+### Response example
 https://covid19.pillious.now.sh/api/data?region=European%20Region&cases=35000&reportDate=2020-03-25
 ```javascript
 [
