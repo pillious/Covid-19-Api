@@ -6,7 +6,7 @@ Get up to date COVID-19 data in json format.
 
 ## Usage:
 
-### Get the most recent day's data:
+### Get the most recent report's data:
 https://covid19.pillious.now.sh/api/data
 <br><br>
 
