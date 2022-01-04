@@ -1,5 +1,5 @@
 # Covid-19 Api
-Get up to date COVID-19 data in json format. <br><br>
+Global COVID-19 data (free to use). - latest data: Aug. 16, 2020 <br><br>
 
 ## Usage:
 
