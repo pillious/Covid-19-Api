@@ -1,18 +1,24 @@
 # Covid-19 Api
 Global COVID-19 data (free to use). - latest data: Aug. 16, 2020 <br><br>
 
+[Find me on RapidAPI](https://rapidapi.com/pillious/api/who-covid-19-data?endpoint=apiendpoint_6ee0a65a-43a1-44c3-a821-a0137508f32e)
+<br>
+
 ## Usage:
 
-### Get all data
-https://covid190api.herokuapp.com/api/data
+### Get the most recent report's data
+https://covid19.pillious.now.sh/api/data
 <br><br>
 
-### Get a list of all searchable Country & Territory names.
-https://covid190api.herokuapp.com/api/data/names
+### Utility endpoints
+Valid country and territory names: [/api/data/names](https://covid19.pillious.now.sh/api/data/names) <br>
+Valid region names: [/api/data/regions](https://covid19.pillious.now.sh/api/data/regions) <br>
+Description of transmission types: [/api/data/transmissionTypes](https://covid19.pillious.now.sh/api/data/transmissionTypes)
 <br><br>
+        
 
 ### Filter parameters
-<div>https://covid190api.herokuapp.com/api/data?{parameters}</div>
+<div>https://covid19.pillious.now.sh/api/data?{parameters}</div>
 <br>
 
 Parameter | Type | Description
@@ -26,15 +32,17 @@ cases | Integer | Limit search to *n* number of total confirmed cases and above.
 newCases | Integer | Limit search to *n* number of new confirmed cases (since the previous report) and above.
 deaths | Integer | Limit search to *n* number of total confirmed deaths and above.
 newDeaths | Integer |  Limit search to *n* number of new confirmed deaths (since the previous report) and above.
-transmissionType | Integer | Search by a specific type of transmission (as defined by WHO). * <ul><li>0 = Community transmission</li><li>1 = Local transmission</li><li>2 = Imported cases only</li><li>3 = Under investigation</li><li>4 = Interrupted transmission</li></ul>
+transmissionType | Integer | Search by a specific type of transmission (as defined by WHO). * <ul><li>0 = Community transmission</li><li>1 = Local transmission</li><li>2 = Imported cases only</li><li>3 = Under investigation</li><li>4 = Interrupted transmission</li><li>5 = Sporadic cases</li><li>6 = Cluster of cases</li><li>7 = No cases</li></ul>
 
-0. **Community transmission** is evidenced by the inability to relate confirmed cases through chains of transmission for a large number of cases, or by increasing positive tests through sentinel samples (routine systematic testing of respiratory samples from established laboratories).
-1. **Local transmission** indicates locations where the source of infection is within the reporting location.
-2. **Imported cases only** indicates locations where all cases have been acquired outside the location of reporting.
-3. **Under investigation** indicates locations where type of transmission has not been determined for any cases.
-4. **Interrupted transmission** indicates locations where interruption of transmission has been demonstrated.
-#### Response example
-http://covid190api.herokuapp.com/api/data?region=European%20Region&cases=35000&reportDate=2020-03-25
+&#42; Descriptions for each transmission type found [HERE](https://covid19.pillious.now.sh/api/data/transmissionTypes).
+
+### Api Updates
+6/19/20: 
+- New transmissionType added (No cases) <br>
+- If no query params are provided, /api/data returns data for the most recent report (originally returned data for every report)
+
+### Response example
+https://covid19.pillious.now.sh/api/data?region=European%20Region&cases=35000&reportDate=2020-03-25
 ```javascript
 [
   {
